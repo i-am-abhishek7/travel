@@ -4,198 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tourest - Explore the World</title>
-
-    <!-- 
-    - favicon
-  -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
-
-    <!-- 
-    - custom css link
-  -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!-- 
-    - google font link
-  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <title>Your TravelBuddy</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-
-  <body id="top">
-    <!-- 
-    - #HEADER
-  -->
-
-    <header class="header" data-header>
-      <div class="container">
-        <a href="#">
-          <h1 class="logo">Tourest</h1>
-        </a>
-
-        <button
-          class="nav-toggle-btn"
-          data-nav-toggle-btn
-          aria-label="Toggle Menu"
-        >
-          <ion-icon name="menu-outline" class="open"></ion-icon>
-          <ion-icon name="close-outline" class="close"></ion-icon>
-        </button>
-
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li>
-              <a href="#" class="navbar-link">Home</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link">About Us</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link">Tours</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link">Destinations</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link">Blog</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link">Contact Us</a>
-            </li>
-          </ul>
-
-          <a href="#" class="btn btn-secondary">Booking Now</a>
-        </nav>
+  <body>
+    <div class="navbar">
+      <div class="navbar__heading">
+        <h1>TravelBuddy</h1>
       </div>
-    </header>
+      <div class="nav__links">
+        <div class="links">Home</div>
+        <div class="links">About Us</div>
+        <div class="links">Destination</div>
+        <div class="links">Contact Us</div>
+        </ul>
+      </div>
+    </div>
 
-    <main>
-      <article>
-        <section class="section destination">
-          <div class="container">
-            <p class="section-subtitle">Destinations</p>
+    <div class="destination__container">
+      <h1 class="destination__container__heading">Destinations</h1>
+      <h1 class="destination__container__subheading">Choose Your Place</h2>
+    </div>
 
-            <h2 class="h2 section-title">Choose Your Place</h2>
+    <div class="place__container">
+      <div class="place">
+        <img src="/images/place1.jpg" alt="goa">
+        <p class="place__name">Maldives</p>
+      </div>
+      <div class="place">
+        <img src="/images/place3.jpg" alt="thailand">
+        <p class="place__name">Thailand</p>
+      </div>
+    </div>
 
-            <ul class="destination-list">
-              <li class="w-50">
-                <a href="#" class="destination-card">
-                  <figure class="card-banner">
-                    <img
-                      src="./assets/images/destination-1.jpg"
-                      width="1140"
-                      height="1100"
-                      loading="lazy"
-                      alt="Malé, Maldives"
-                      class="img-cover"
-                    />
-                  </figure>
+    <div class="places__container">
+      <div class="place__card">
+        <img src="/images/card__image1.jpg" alt="">
+        <p class="place__name">Thailand</p>
+      </div>
+      <div class="place__card">
+        <img src="/images/card__image3.jpg" alt="">
+        <p class="place__name">Himachal</p>
+      </div>
+      <div class="place__card">
+        <img src="/images/card__image4.jpg" alt="">
+        <p class="place__name">Kashmir</p>
+      </div>
+      <div class="place__card">
+        <img src="/images/card__image1.jpg" alt="">
+        <p class="place__name">Thailand</p>
+      </div>
+      <div class="place__card">
+        <img src="/images/card__image3.jpg" alt="">
+        <p class="place__name">Himachal</p>
+      </div>
+      <div class="place__card">
+        <img src="/images/card__image4.jpg" alt="">
+        <p class="place__name">Kashmir</p>
+      </div>
+    </div>
 
-                  <div class="card-content">
-                    <p class="card-subtitle">Malé</p>
-
-                    <h3 class="h3 card-title">Maldives</h3>
-                  </div>
-                </a>
-              </li>
-
-              <li class="w-50">
-                <a href="#" class="destination-card">
-                  <figure class="card-banner">
-                    <img
-                      src="./assets/images/destination-2.jpg"
-                      width="1140"
-                      height="1100"
-                      loading="lazy"
-                      alt="Bangkok, Thailand"
-                      class="img-cover"
-                    />
-                  </figure>
-
-                  <div class="card-content">
-                    <p class="card-subtitle">Bangkok</p>
-
-                    <h3 class="h3 card-title">Thailand</h3>
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="destination-card">
-                  <figure class="card-banner">
-                    <img
-                      src="./assets/images/destination-3.jpg"
-                      width="1110"
-                      height="480"
-                      loading="lazy"
-                      alt="Kuala Lumpur, Malaysia"
-                      class="img-cover"
-                    />
-                  </figure>
-
-                  <div class="card-content">
-                    <p class="card-subtitle">Kuala Lumpur</p>
-
-                    <h3 class="h3 card-title">Malaysia</h3>
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="destination-card">
-                  <figure class="card-banner">
-                    <img
-                      src="./assets/images/destination-4.jpg"
-                      width="1110"
-                      height="480"
-                      loading="lazy"
-                      alt="Kathmandu, Nepal"
-                      class="img-cover"
-                    />
-                  </figure>
-
-                  <div class="card-content">
-                    <p class="card-subtitle">Kathmandu</p>
-
-                    <h3 class="h3 card-title">Nepal</h3>
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="destination-card">
-                  <figure class="card-banner">
-                    <img
-                      src="./assets/images/destination-5.jpg"
-                      width="1110"
-                      height="480"
-                      loading="lazy"
-                      alt="Jakarta, Indonesia"
-                      class="img-cover"
-                    />
-                  </figure>
-
-                  <div class="card-content">
-                    <p class="card-subtitle">Jakarta</p>
-
-                    <h3 class="h3 card-title">Indonesia</h3>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </article>
-    </main>
+    <div class="contact__container">
+      <h1 class="cotact__heading">Contact Us</h1>
+      <div class="cotact__form">
+        <form>
+          <input type="text" placeholder="Enter Name">
+          <input type="email" placeholder="Enter email">
+          <textarea name="name" id="1" cols="30" rows="10" placeholder="Enter Text..."></textarea>
+          <div class="submit__button">Submit</div>
+        </form>
+        
+      </div>
+      
+    </div>
   </body>
 </html>
