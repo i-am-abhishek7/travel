@@ -21,7 +21,6 @@
 }
 
 .nav__links {
-  /* border: 1px solid red; */
   width: 50%;
   display: flex;
   /* flex: 1; */
@@ -32,15 +31,15 @@
   font-weight: 400;
 }
 
-.links:hover {
+.links {
   color: white;
+  text-decoration: none;
 }
 
 .destination__container {
   height: 20%;
   width: 100%;
   padding: 3rem;
-  /* border: 1px solid black; */
 }
 
 .destination__container__heading {
@@ -80,10 +79,6 @@
   object-fit: cover;
   cursor: pointer;
   position: relative;
-}
-
-img:hover {
-  transform: scale(1.02);
 }
 
 .place .place__name {
